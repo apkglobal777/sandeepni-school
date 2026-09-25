@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roshani Nayak | Student Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7ff;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6a5acd, #8a2be2);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        nav {
+            background-color: #222;
+            text-align: center;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 17px;
+        }
+
+        nav a:hover {
+            color: #b9a7ff;
+        }
+
+        section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #6a5acd;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        .about {
+            text-align: center;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            width: 250px;
+            padding: 25px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            color: #6a5acd;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            text-align: center;
+            line-height: 2;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        button {
+            background-color: #6a5acd;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background-color: #4b3ca7;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Hi, I'm Roshani Nayak 👋</h1>
+        <p>Class 10 Student | Sandeepni School</p>
+        <button onclick="showMessage()">Welcome!</button>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+        <h2>Welcome to My Website</h2>
+        <div class="about">
+            <p>
+                Welcome to my personal student portfolio website!
+                I created this website as a school project to introduce
+                myself and share some information about my interests,
+                skills, and hobbies.
+            </p>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about">
+            <p>
+                My name is <b>Roshani Nayak</b>. I am a student of
+                <b>Class 10</b> at <b>Sandeepni School</b>.
+                I enjoy learning new things and developing my skills.
+                I am interested in technology and would like to learn
+                more about website development.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>💻 Computer</h3>
+                <p>I enjoy learning about computers and technology.</p>
+            </div>
+
+            <div class="card">
+                <h3>📚 Learning</h3>
+                <p>I like learning new subjects and exploring new ideas.</p>
+            </div>
+
+            <div class="card">
+                <h3>🌐 Web Design</h3>
+                <p>I am learning HTML, CSS and JavaScript.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies -->
+    <section id="hobbies">
+        <h2>My Hobbies</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>🎨 Drawing</h3>
+                <p>I enjoy drawing and being creative.</p>
+            </div>
+
+            <div class="card">
+                <h3>🎵 Music</h3>
+                <p>I like listening to music in my free time.</p>
+            </div>
+
+            <div class="card">
+                <h3>📖 Reading</h3>
+                <p>I enjoy reading and learning new things.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <div class="contact">
+            <p>📧 Email: your-email@example.com</p>
+            <p>🏫 School: Sandeepni School</p>
+            <p>🎓 Class: 10th</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Roshani Nayak | Student Portfolio</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            alert("Welcome to Roshani's website! 🌸");
+        }
+    </script>
+
+</body>
+</html>
